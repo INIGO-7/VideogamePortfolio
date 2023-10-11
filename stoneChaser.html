@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>StoneChaser Showcase</title>
+        <meta name="description" content="StoneChaser videogame showcase">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/c58ebe6124.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <img class="foto-perfil" id="stChaser-face" alt="Cara del personaje" src="res/stoneChaser/stChaserFace.png">
+            <h1 class="texto-titulo">StoneChaser</h1>
+            <div class="dropdown">
+                <button class="dropbtn custom-button">navegación</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Proyectos</a>
+                    <a href="thePathToGod.html">The Path To God</a>
+                    <a href="formulario.html">Formulario</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="project-world">
+                <img id="StoneChaser-gameBeginning" alt="Foto del videojuego" src="res/stoneChaser/gameBeginning.PNG">
+                <div class="leyenda">
+                    <ul>
+                        <li><a href="#stonechaser-usercreation">User creation</a></li>
+                        <li><a href="#stonechaser-crafting">Crafting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="stonechaser-usercreation" class="stonechaser-usercreation">
+                <img id="StoneChaser-gameBeginning" alt="Foto del videojuego" src="res/stoneChaser/startMenu.PNG">
+                <p>Se puede </p>
+                <img id="StoneChaser-gameBeginning" alt="Foto del videojuego" src="res/stoneChaser/createUser.PNG">
+                <p>estoy acáa</p>
+            </div>
+            <div id="stonechaser-crafting" class="stonechaser-crafting">
+                <div class="crafting-title"><h3>Creación de items: ejemplo de fabricación de una espada en la mesa de crafteo</h3></div>
+                <div class="crafting-content">
+                    <img class="craft1" id="StoneChaser-gameBeginning" alt="Foto del videojuego" src="res/stoneChaser/craftTable.PNG">
+                    <p>
+                        Aquí podemos ver la mesa de crafteo. Es una cuadrícula de 3x3, en la que podemos poner items que hayamos conseguido
+                        por el mundo para intercambiarlos por herramientas más útiles que nos servirán para facilitarnos la experiencia. 
+                        Nadie quiere tener que enfrentarse a un enemigo estando desarmado, por eso vamos a enseñar cómo se fabrica una espada.
+                        Para empezar, se necesitan los materiales necesarios para poder fabricar cualquier herramienta en el juego. 
+                        Dado que vamos a hacer una espada de hierro, necesitamos por lo menos un palo y dos lingotes de hierro. 
+                        Como podemos ver en la foto, ya tenemos de sobra en el inventario.
+                    </p>
+                    <img class="craft2" id="StoneChaser-gameBeginning" alt="Foto del videojuego" src="res/stoneChaser/sword1.PNG">
+                    <p>
+                        Ahora colocamos los palos y los lingotes de hierro en el inventario. Hemos puesto dos palos y cuatro lingotes,
+                        lo cuál debería de darnos para fabricar dos espadas. 
+                        Eso si, no vale sólo con poner los items en la mesa de crafteo, estos hay que ponerlos en cierta disposición para
+                        indicar que queremos hacer una espada y no otro tipo de herramienta que requiriese los mismos items.
+                        Una vez colocamos los lingotes en el centro, y los palos justo debajo de estos, aparecerá en la derecha la imagen
+                        de una espada. Esta no estará disponible hasta que se presione el botón "CRAFT". Una vez sea presionado, se consumirán dos lingotes
+                        de hierro y un palo, y la espada de hierro se colocará inmediatamente en el primer hueco libre de nuestro inventario.
+                    </p>
+                    <img class="craft3" id="StoneChaser-gameBeginning" alt="Foto del videojuego" src="res/stoneChaser/sword2.PNG">
+                    <p>
+                        Como podemos observar en esta imagen, la espada ha sido creada y está en nuestro inventario, y han sido consumidos la 
+                        cantidad de un palo y dos lingotes de hierro. Si quisiéramos craftear una segunda espada, para cuando esta primera se rompa,
+                        podríamos darle otra vez al botón "CRAFT" y esta se colocará encima de la ya crafteada. Cuando vamos a añadir algo al
+                        inventario, el juego busca automáticamente a ver si este item está ya en el inventario. Si está, lo stackea encima de el
+                        otro para que no ocupe un hueco innecesario en el inventario.
+                    </p>
+                    <img class="craft4" id="StoneChaser-gameBeginning" alt="Foto del videojuego" src="res/stoneChaser/sword3.PNG">
+                    <p>
+                        Aquí vemos como se ha crafteado la segunda espada, nos hemos quedado sin hierro y palos y esta segunda espada se muestra
+                        encima de la primera, correctamente stacked.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="author"><strong>Autor ~</strong>&nbsp;Iñigo Fernández-Sopeña Hernández</div>
+            <div class="contact-data">
+                <div class="icons">
+                    <i class="fa-solid fa-suitcase"></i><br>
+                    <i class="linkedin-icon fa-brands fa-linkedin"></i><br>
+                    <i class="github-icon fa-brands fa-square-github"></i><br>
+                    <i class="fa-solid fa-envelope"></i><br>
+                </div>
+                <div class="data">
+                    <span>Ingeniería Informática + Ciencia de Datos e IA</span><br>
+                    <a class="linkedin-link" target="_blank" href="https://www.linkedin.com/in/i%C3%B1igo-fern%C3%A1ndez-sope%C3%B1a-090564194/">LinkedIn</a><br>
+                    <a class="github-link" target="_blank" href="https://github.com/INIGO-7">Github</a><br>
+                    <span>inigofernandez@opendeusto.es</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

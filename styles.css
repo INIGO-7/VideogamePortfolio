@@ -1,0 +1,391 @@
+:root{
+    margin: 0;
+    padding: 0;
+    --primary-color: black;
+    --secondary-color: #3b4249;
+    --secondary-off-color: #191f31;
+    --accent-color: #528a9e;
+    --text-color: white;
+    --border-color: #476570;
+}
+
+@font-face {
+    font-family: cocogoose;
+    src: url(./res/fonts/cocogoose2.ttf);
+}
+
+@font-face {
+    font-family: akira;
+    src: url(./res/fonts/akira.otf);
+}
+
+@font-face {
+    font-family: roboto1;
+    src: url(./res/fonts/roboto1.ttf);
+}
+
+@font-face {
+    font-family: roboto2;
+    src: url(./res/fonts/roboto2.ttf);
+}
+
+body{
+    font-family: roboto2, 'Times New Roman', Times, serif;
+    background-color: var(--secondary-off-color);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+/*-------------------- HEADER CONTENT --------------------*/
+
+header {
+    width: 100%;
+    height: 75px;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 3px 5px var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto-perfil {
+    height: 80px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    margin-left: 20px;
+    border-radius: 50%;
+    height: 75px;
+}
+
+.texto-titulo{
+    font-family: akira, cocogoose, Verdana;
+    vertical-align: center;
+    color: var(--text-color);
+}
+
+.dropdown{
+    height: 80px;
+    margin-right: calc(2.5vw);
+}
+
+.dropbtn {
+    height: 65px;
+    margin-top: 5px;
+    font-size: 16px;
+    /*border: 3.5px solid var(--accent-color);*/
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    left: calc(100vw - 11vw);
+    background-color: var(--accent-color);
+    border-radius: 0 0 0 20%;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #ffff;
+}
+
+.dropdown-content a:hover:last-child{
+    border-radius: 0 0 0 20%;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*-------------------- /HEADER CONTENT --------------------*/
+
+/*-------------------- MAIN CONTENT --------------------*/
+
+/* contenido compartido */
+
+main{
+    background-color: var(--secondary-color);
+    margin: 75px 10vw 0 10vw;
+    text-align: center;
+    height: auto;
+    border: 3.5px solid var(--border-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.recuadros {
+    display: inline-block;  /*???????? MIRAR APUNTES!*/
+    width: 80%;
+    border-style: outset;
+    border-color: var(--border-color);
+    border-width: 15px;
+    margin: 15px;
+    padding: 20px;
+}
+
+.custom-button{
+    background-color: var(--accent-color);
+    font-family: roboto1, 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    border-radius: 20%;
+    border: none;
+    cursor: crosshair;
+}
+
+.project-world{
+    height: calc(100vh - 75px);
+}
+
+.project-world > img{
+    margin-top: 100px;
+    height: 30vw;
+}
+
+.leyenda {
+    width: 45vw;
+    height: 70px;
+    margin: 0 auto 0;
+    background-color: var(--primary-color);
+    top: 0 !important;
+    border-radius: 20%;
+}
+
+.leyenda > ul{
+    position: relative;
+    /*Para centrarlo verticalmente se puede posicionar en la mitad de su contenedor,
+    y después restarle la mitad de la altura de si mismo.*/
+    top: 50%;
+    transform: translate(0, -50%);
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leyenda a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.leyenda a:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+/* proyectos overview */
+
+.sobremi{
+}
+
+.objetivo{
+}
+
+.proyectos-ensi{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.proyectos-stonechaser{
+    display: flex;
+    flex-direction: column;
+}
+
+.proyectos-thepathtogod{
+    display: flex;
+    flex-direction: column;
+}
+
+/*STONECHASER*/
+
+.stonechaser-usercreation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.stonechaser-crafting{
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.crafting-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.crafting-title{
+    margin-bottom: 60px;
+}
+
+.craft1{
+}
+
+.craft2{
+}
+
+.craft3{
+}
+
+.craft4{
+}
+
+/*/STONECHASER*/
+
+/*THEPATHTOGOD*/
+/*/THEPATHTOGOD*/
+
+/* formularios */
+
+.eval-final{
+    margin-top: 50px;
+}
+
+form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.formularios{
+    display: inline-flex;
+    width: 80%;
+    height: 100%;
+}
+
+.formularios > div {
+    height: 100%;
+    width: 100%;
+}
+
+.zona-comentarios{
+    display: inline-flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+
+.caja-comentarios{
+    margin: 20px;
+    overflow: auto;
+    background-color: var(--secondary-off-color);
+    color: white;
+    border-width: 3px;
+}
+
+.enviar-puntuaciones{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.formulario-stonechaser::before{
+    content: "Stonechaser";
+    margin: 5px;   /*NOT WORKING!!-----*/
+}
+
+.formulario-thepathtogod::before{
+    content: "ThePathToGod";
+    margin: 5px;   /*NOT WORKING!!-----*/
+}
+
+.table {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+}
+
+table{
+    width: 55%;
+}
+
+table, tr{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even), thead, tfoot {
+    background-color: var(--accent-color);
+    color: black;
+}
+
+/*-------------------- /MAIN CONTENT --------------------*/
+
+/*-------------------- FOOT CONTENT --------------------*/
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: roboto1, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-around;
+    height: 12vh;
+    top: 0 !important;
+    border-radius: 5px 20px 5px;
+    border: 3.5px solid var(--border-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    clear: right;
+    margin: 50px 10vw 50px;
+}
+
+
+footer i{
+    color: var(--text-color);
+    margin-right: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-data{
+    display: flex;
+    align-items: center;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.15; /*cambia cuánto hace <br> bajar al elemento*/
+}
+
+.linkedin-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.github-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/*-------------------- /FOOT CONTENT --------------------*/
