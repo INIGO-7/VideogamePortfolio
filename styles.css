@@ -190,13 +190,16 @@ main{
     background-color: var(--secondary-color);
 }
 
+.proyectos-links{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.proyectos-links:hover{
+    color: var(--accent-color);
+}
+
 /* proyectos overview */
-
-.sobremi{
-}
-
-.objetivo{
-}
 
 .proyectos-ensi{
     margin-top: 100px;
@@ -218,7 +221,10 @@ main{
 /*STONECHASER*/
 
 .stonechaser-usercreation {
+    width: 70%;
+    margin: auto;
     display: grid;
+    justify-content: space-evenly;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
@@ -231,6 +237,7 @@ main{
 
 .crafting-content{
     display: grid;
+    justify-content: space-evenly;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
@@ -239,21 +246,25 @@ main{
     margin-bottom: 60px;
 }
 
-.craft1{
-}
-
-.craft2{
-}
-
-.craft3{
-}
-
-.craft4{
-}
 
 /*/STONECHASER*/
 
 /*THEPATHTOGOD*/
+
+.pathtogod-usercreation{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pathtogod-gameplay{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /*/THEPATHTOGOD*/
 
 /* formularios */
